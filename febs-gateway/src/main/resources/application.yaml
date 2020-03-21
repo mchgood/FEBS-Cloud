@@ -1,20 +1,9 @@
 server:
-  port: 8101
+  port: 8301
 
 spring:
   application:
-    name: FEBS-Auth
-  redis:
-    database: 0
-    host: 127.0.0.1
-    port: 6379
-    jedis:
-      pool:
-        min-idle: 8
-        max-idle: 500
-        max-active: 2000
-        max-wait: 10000
-    timeout: 5000
+    name: FEBS-Gateway
 
 eureka:
   instance:
@@ -26,3 +15,18 @@ eureka:
     registry-fetch-interval-seconds: 3
     serviceUrl:
       defaultZone: http://febs:123456@localhost:8001/register/eureka/
+
+zuul:
+  routes:
+    auth:
+      path: /auth/**
+      serviceId: FEBS-Auth
+      sensitiveHeaders: "*"
+  retryable: true
+  ignored-services: "*"
+  ribbon:
+    eager-load:
+      enabled: true
+
+ribbon:
+  ReadTimeout: 3000

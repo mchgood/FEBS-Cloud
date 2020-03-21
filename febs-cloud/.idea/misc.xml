@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../febs-register/pom.xml" />
         <option value="$PROJECT_DIR$/../febs-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/../febs-gateway/pom.xml" />
       </list>
     </option>
   </component>

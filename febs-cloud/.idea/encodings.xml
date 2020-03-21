@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/../febs-auth/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../febs-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../febs-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../febs-register/src/main/java" charset="UTF-8" />
   </component>
 </project>
