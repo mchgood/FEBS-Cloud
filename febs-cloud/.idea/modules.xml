@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/febs-cloud.iml" filepath="$PROJECT_DIR$/.idea/febs-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/../febs-common/febs-common.iml" filepath="$PROJECT_DIR$/../febs-common/febs-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../febs-register/febs-register.iml" filepath="$PROJECT_DIR$/../febs-register/febs-register.iml" />
     </modules>
   </component>
 </project>

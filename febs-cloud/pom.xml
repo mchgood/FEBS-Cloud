@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>../febs-common</module>
+        <module>../febs-register</module>
     </modules>
 
     <!-- 标记为pom不打包 -->
