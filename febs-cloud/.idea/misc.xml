@@ -10,7 +10,15 @@
         <option value="$PROJECT_DIR$/../febs-register/pom.xml" />
         <option value="$PROJECT_DIR$/../febs-auth/pom.xml" />
         <option value="$PROJECT_DIR$/../febs-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/../febs-server/pom.xml" />
+        <option value="$PROJECT_DIR$/../febs-server/febs-server-system/pom.xml" />
+        <option value="$PROJECT_DIR$/../febs-server/febs-server-test/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../febs-server-system/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />

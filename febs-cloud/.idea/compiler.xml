@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="febs-server-test" />
+        <module name="febs-common" />
         <module name="FEBS-Common" />
         <module name="febs-gateway" />
-        <module name="febs-register" />
-        <module name="febs-common" />
         <module name="febs-auth" />
+        <module name="febs-server" />
+        <module name="febs-server-system" />
+        <module name="febs-register" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +22,9 @@
       <module name="febs-common" target="1.8" />
       <module name="febs-gateway" target="1.8" />
       <module name="febs-register" target="1.8" />
+      <module name="febs-server" target="1.8" />
+      <module name="febs-server-system" target="1.8" />
+      <module name="febs-server-test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -28,6 +34,9 @@
       <module name="febs-common" options="-parameters" />
       <module name="febs-gateway" options="-parameters" />
       <module name="febs-register" options="-parameters" />
+      <module name="febs-server" options="-parameters" />
+      <module name="febs-server-system" options="-parameters" />
+      <module name="febs-server-test" options="-parameters" />
     </option>
   </component>
 </project>
