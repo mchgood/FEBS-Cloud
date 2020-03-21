@@ -36,6 +36,12 @@
         </dependency>
         <!--tool end-->
 
+        <!-- redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
         <!--spring start-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

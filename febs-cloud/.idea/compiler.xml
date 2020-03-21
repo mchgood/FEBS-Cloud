@@ -9,9 +9,11 @@
         <module name="FEBS-Common" />
         <module name="febs-register" />
         <module name="febs-common" />
+        <module name="febs-auth" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="febs-auth" target="1.8" />
       <module name="febs-cloud" target="1.8" />
       <module name="febs-common" target="1.8" />
       <module name="febs-register" target="1.8" />
@@ -20,6 +22,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="FEBS-Common" options="-parameters" />
+      <module name="febs-auth" options="-parameters" />
       <module name="febs-common" options="-parameters" />
       <module name="febs-register" options="-parameters" />
     </option>

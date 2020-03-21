@@ -10,6 +10,7 @@
     <modules>
         <module>../febs-common</module>
         <module>../febs-register</module>
+        <module>../febs-auth</module>
     </modules>
 
     <!-- 标记为pom不打包 -->
