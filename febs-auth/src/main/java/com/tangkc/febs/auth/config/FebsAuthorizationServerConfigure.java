@@ -4,6 +4,7 @@ import cn.hutool.core.collection.CollectionUtil;
 import com.tangkc.febs.auth.properties.FebsAuthProperties;
 import com.tangkc.febs.auth.properties.FebsClientsProperties;
 import com.tangkc.febs.auth.service.FebsUserDetailService;
+import com.tangkc.febs.auth.translator.FebsWebResponseExceptionTranslator;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -43,6 +44,8 @@ public class FebsAuthorizationServerConfigure extends AuthorizationServerConfigu
     private PasswordEncoder passwordEncoder;
     @Autowired
     private FebsAuthProperties authProperties;
+    @Autowired
+    private FebsWebResponseExceptionTranslator exceptionTranslator;
 
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
@@ -73,7 +76,8 @@ public class FebsAuthorizationServerConfigure extends AuthorizationServerConfigu
         endpoints.tokenStore(tokenStore())
                 .userDetailsService(userDetailService)
                 .authenticationManager(authenticationManager)
-                .tokenServices(defaultTokenServices());
+                .tokenServices(defaultTokenServices())
+                .exceptionTranslator(exceptionTranslator);
     }
 
     @Bean

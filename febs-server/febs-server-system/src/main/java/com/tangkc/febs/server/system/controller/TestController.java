@@ -22,5 +22,10 @@ public class TestController {
     public Principal currentUser(Principal principal) {
         return principal;
     }
+
+    @GetMapping("hello")
+    public String hello(String name) {
+        return "hello" + name;
+    }
 }
 

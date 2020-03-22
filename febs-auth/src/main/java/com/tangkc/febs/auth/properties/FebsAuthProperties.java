@@ -17,6 +17,6 @@ import org.springframework.context.annotation.PropertySource;
 public class FebsAuthProperties {
 
     private FebsClientsProperties[] clients = {};
-    private int accessTokenValiditySeconds = 60 * 60 * 24;
-    private int refreshTokenValiditySeconds = 60 * 60 * 24 * 7;
+    private int accessTokenValiditySeconds = 60;
+    private int refreshTokenValiditySeconds = 60;
 }
